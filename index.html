@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Personal portfolio website - easy tutorials</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div id="header">
+        <div class="container">
+              <nav>
+                  <img src="download.jpg" width="120px" height="70px" class="logo">
+                  <ul>
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">About</a></li>
+                      <li><a href="#">Services</a></li>
+                      <li><a href="#">Porfolio</a></li>
+                      <li><a href="#">Contact</a></li>
+                  </ul>
+              </nav>
+              <div class="header">
+                  <p>Sultan Restraunt</p>
+                  <h1>Hi, Welcome<span></span> To<br>Sultan Restraunt & Hotel</h1>
+              </div>
+        </div>
+    </div>
+    <!-- ---------about----------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="download (1).jpg" width="300px" height="250px">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Us</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                         Quasi quia quis modi natus possimus, minus cupiditate expedita ipsam, veritatis, tenetur nam!
+                          Mollitia reprehenderit laborum consectetur quis ex explicabo odio. Officiis nulla fugit corrupti id aspernatur beatae 
+                          delectus eum ipsam dolore cupiditate perferendis maiores soluta, quidem numquam temporibus provident quasi impedit!
+
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link">About</p>
+                        <p class="tab-links">Services</p>
+                        <p class="tab-links">Menu</p>
+                    </div>
+                    <div class="tab-contents">
+                        <ul>
+                            <li><span>source of protein</span><br>fish</li>
+                            <li><span></span>lunch food<br>Rice dishes</li>
+                            <li><span>health food</span><br>fruit</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------services----------- -->
+    <div id="services">
+         <div class="container">
+             <h1 class="sub-title">Our services</h1>
+             <div class="Services-list">
+                 <div>
+                     <i class="fas fa-code"></i>
+                     <h2>Food Types</h2>
+                     <p>chicken,fish,chips,rice,pasta,juices,and soft foods.</p>
+                     <a href="#">Learn more</a>
+                 </div>   
+                 <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>Health food</h2>
+                    <p>Salad,fish,juice,burger.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                   
+             </div>
+         </div>
+    </div>
+    <!-- ----------- porfolio----------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Our work</h1> 
+            <div class="work-list">
+                <div class="work">
+                    <img src="bugger.png">
+                    <div class="layer">
+                        <h3>fast food</h3>
+                        <p>sweet burger </p>
+                        <a href="#"><i class="fas fa-external=link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="jabis.jpg">
+                    <div class="layer">
+                        <h3>fast food</h3>
+                        <p>chips </p>
+                        <a href="#"><i class="fas fa-external=link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="fish.jpg">
+                    <div class="layer">
+                        <h3>junk food</h3>
+                        <p>sweet fish</p>
+                        <a href="#"><i class="fas fa-external=link-alt"></i></a>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+    <!-- ----------contact---------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title"> Contact Us</h1>
+                    <p>contact@example.com</p>
+                    <p>444444</p>
+                    <div class="social icons">
+                        <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                        <a href=""><i class="fab fa-twitter-square"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="your name" required>
+                        <input type="email" name="" placeholder="your email " required>
+                        <textarea name="Message" rows="6" placeholder="your message"></textarea>
+                        <button type="submit">submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+         
+         var tablinks = documant.getElementByclassName("tab-links");
+         var tabcontents = documant.getElementByclassName("tab-contents");
+
+         function opentab(tabname){
+            for(tablink of tablinks){
+                tabklink.classList.remove("active-link");
+            }
+            event.currentTarget.classList.add("Active-link")
+            documant.getElementById("tabname").classList.add
+         }
+             
+    </script>
+</body>
+</html>
